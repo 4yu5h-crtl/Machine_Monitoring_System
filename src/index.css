@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  /* Card Container - SKF Professional Style */
+  .card-container {
+    @apply bg-white rounded-xl shadow-lg p-8 border border-gray-200;
+  }
+
+  /* Input Field - SKF Blue Focus */
+  .input-field {
+    @apply w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-opacity-50 focus:outline-none transition-all;
+  }
+
+  .input-field:focus {
+    border-color: #005A9C;
+    --tw-ring-color: #005A9C;
+  }
+
+  /* Primary Button - SKF Blue Theme */
+  .btn-primary {
+    @apply px-6 py-3 rounded-lg text-white font-semibold shadow-md transition-all duration-200;
+    background-color: #005A9C;
+  }
+
+  .btn-primary:hover:not(:disabled) {
+    background-color: #004580;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(0, 90, 156, 0.3);
+  }
+
+  .btn-primary:active:not(:disabled) {
+    transform: translateY(0);
+  }
+
+  .btn-primary:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+  }
+}
+
+/* Global Body Styles */
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #EBF4FF;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
