@@ -106,7 +106,7 @@ DB_NAME=paperless_skf
 JWT_SECRET=your_jwt_secret_key
 
 # Set this to the Control Room PC's IP address on the factory network
-VITE_API_URL=http://192.168.29.153:5000/api
+VITE_API_URL=http://your_ip:5000/api
 ```
 
 ### 3. Initialize the Database
@@ -208,4 +208,5 @@ DELETE FROM users WHERE token_no = 'TOKEN_HERE';
 **`machine_status_logs`** — All submitted machine status records (one row per channel/shift/date, with 16 status + 16 remark columns)
 
 Full schema: [`server/schema.sql`](./server/schema.sql)
+
 
