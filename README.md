@@ -10,7 +10,7 @@ A web-based paperless machine monitoring system for SKF factory operations. Work
 
 | Access URL | Purpose |
 |---|---|
-| `http://192.168.29.153:5173` | Open the app from **any device on the factory network** (tablets, office PCs, phones) |
+| `http://your_ip:5173` | Open the app from **any device on the factory network** (tablets, office PCs, phones) |
 | `http://localhost:5173` | Open the app **on the control room PC itself** |
 
 > ⚠️ **If the IP changes** (e.g. after a network restart), see the [IP Address Changed](#-ip-address-changed) section below.
@@ -208,3 +208,4 @@ DELETE FROM users WHERE token_no = 'TOKEN_HERE';
 **`machine_status_logs`** — All submitted machine status records (one row per channel/shift/date, with 16 status + 16 remark columns)
 
 Full schema: [`server/schema.sql`](./server/schema.sql)
+
